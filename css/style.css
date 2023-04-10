@@ -78,6 +78,8 @@ iframe {
   font-size: 1.375rem;
   line-height: 35px;
   padding: 18px 60px;
+  border: 1px solid transparent;
+  transition: all 0.3s ease-in-out;
 }
 
 .card-btn {
@@ -128,11 +130,22 @@ iframe {
 .primary-btn {
   background: var(--primary-clr);
   color: var(--default-white);
+  border: 1px solid transparent;
+}
+.primary-btn:hover {
+  background: transparent;
+  color: var(--primary-clr);
+  border: 1px solid var(--primary-clr);
 }
 
 .seconday-btn {
   color: var(--head-clr);
   background: var(--default-white);
+}
+.seconday-btn:hover {
+  background: transparent;
+  color: var(--default-white);
+  border: 1px solid var(--default-white);
 }
 
 .head-sub {
@@ -348,6 +361,12 @@ header nav ul li a:hover {
   background: var(--primary-clr);
   padding: 0 !important;
   min-height: 81px;
+  border: 1px solid transparent;
+}
+.banner .form-sec form input[type=submit]:hover {
+  color: var(--primary-clr);
+  background-color: transparent;
+  border: 1px solid var(--primary-clr);
 }
 .banner .form-sec form .country-wrap {
   position: relative;
@@ -628,6 +647,10 @@ section.google-review {
   background-color: var(--white-clr);
   padding: 80px 0;
 }
+section.google-review .container {
+  margin-left: auto;
+  margin-right: 0;
+}
 section.google-review .google-head {
   margin-bottom: 99px;
 }
@@ -651,8 +674,12 @@ section.google-review .review-slide .item {
 section.google-review .review-slide .item figure.profile {
   position: absolute;
   bottom: 0;
-  left: 0;
+  left: 4px;
   margin-bottom: 0;
+}
+section.google-review .review-slide .item figure.profile img {
+  border: 8px solid #ffffff;
+  border-radius: 50%;
 }
 section.google-review .review-slide .review-card {
   padding: 3rem 2.75rem;
@@ -741,6 +768,186 @@ section.google-review .review-slide .owl-dots button span {
   height: 1rem;
 }
 
+section.contact {
+  position: relative;
+  padding: 125px 0 75px;
+  background: linear-gradient(0deg, rgba(32, 32, 32, 0.84), rgba(32, 32, 32, 0.84));
+}
+section.contact .row {
+  justify-content: space-between;
+}
+section.contact .bg-img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+section.contact h2 {
+  font-weight: 700;
+  font-size: 55px;
+  line-height: 139%;
+  color: #cfad65;
+  margin-bottom: 4px;
+}
+section.contact p {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 35px;
+  color: #ffffff;
+  margin: 0;
+  padding-bottom: 66px;
+}
+section.contact ul li {
+  display: flex;
+  color: #ffffff;
+  align-items: center;
+  gap: 26px;
+  margin-bottom: 73px;
+}
+section.contact ul li:first-child {
+  margin-bottom: 49px;
+}
+section.contact ul li figure {
+  width: 77px;
+  height: 77px;
+  background-color: #cfad65;
+  padding: 23px 22px;
+  border-radius: 50%;
+}
+section.contact ul li figure img {
+  width: 100%;
+}
+section.contact ul li .text-box h5 {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 106.3%;
+  margin-bottom: 5px;
+}
+section.contact ul li .text-box h6 {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 35px;
+  display: inline-block;
+  margin: 0;
+  width: 447px;
+}
+section.contact ul li .text-box h6 a {
+  color: #ffffff;
+  text-decoration: underline;
+}
+section.contact .logo-img {
+  width: 193px;
+  height: 145px;
+}
+section.contact form .box {
+  margin-top: 15px;
+  position: relative;
+}
+section.contact form .box input {
+  border: 1.5px solid #ffffff;
+  border-radius: 6px;
+  width: 100%;
+  padding: 35px 0 35px 86px;
+  background: transparent;
+  color: #ffffff;
+  font-size: 22px;
+}
+section.contact form .box input:focus {
+  outline: none;
+}
+section.contact form .box input::-moz-placeholder {
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 35px;
+  color: #ffffff;
+}
+section.contact form .box input::placeholder {
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 35px;
+  color: #ffffff;
+}
+section.contact form .box select {
+  border: 1.5px solid #ffffff;
+  border-radius: 6px;
+  width: 100%;
+  padding: 35px 0 35px 86px;
+  background: transparent;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 35px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  color: #ffffff;
+}
+section.contact form .box select:focus {
+  outline: none;
+}
+section.contact form .box textarea {
+  border: 1.5px solid #ffffff;
+  border-radius: 6px;
+  width: 100%;
+  color: #ffffff;
+  padding: 35px 0 52px 86px;
+  background: transparent;
+}
+section.contact form .box textarea::-moz-placeholder {
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 35px;
+  color: #ffffff;
+}
+section.contact form .box textarea::placeholder {
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 35px;
+  color: #ffffff;
+}
+section.contact form .box textarea:focus {
+  outline: none;
+}
+section.contact form .box img {
+  position: absolute;
+  top: 31px;
+  left: 38px;
+  width: 30px;
+  height: 30px;
+}
+section.contact form .box img.option {
+  right: 60px;
+  left: unset;
+  width: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+section.contact form .box img.truck {
+  top: 36px;
+}
+section.contact form .box img.car {
+  top: 34px;
+}
+section.contact form input[type=submit] {
+  width: 100%;
+  padding: 25px 0;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 35px;
+  background: var(--primary-clr);
+  border-radius: 6px;
+  margin-top: 31px;
+  color: var(--default-white);
+  transition: all 0.3s ease-in-out;
+  border: 1px solid transparent;
+}
+section.contact form input[type=submit]:hover {
+  background: transparent;
+  color: var(--primary-clr);
+  border: 1px solid var(--primary-clr);
+}
+
 section.tab-section {
   text-align: center;
   padding: 6.875rem 0;
@@ -752,6 +959,9 @@ section.tab-section .btn_line {
   line-height: 1.625rem;
   font-weight: 600;
   padding: 0.3125rem 0;
+}
+section.tab-section .btn_line:hover {
+  color: var(--primary-clr);
 }
 section.tab-section .btn_line i {
   margin-left: 5px;
@@ -788,6 +998,9 @@ section.tab-section nav .nav-tabs button {
   color: var(--black-clr);
   border-radius: 5.875rem;
   max-width: 14.5625rem;
+}
+section.tab-section nav .nav-tabs button:hover {
+  color: var(--primary-clr);
 }
 section.tab-section nav .nav-tabs button.active {
   background-color: #cfad65;
@@ -839,6 +1052,11 @@ section.tab-section .lchbx .txt .br-50 {
   justify-content: center;
   margin: auto;
   border-radius: 50%;
+  scale: 1;
+  transition: all 0.2s ease-in-out;
+}
+section.tab-section .lchbx .txt .br-50:hover {
+  scale: 1.1;
 }
 section.tab-section .lchbx .txt .br-50 img {
   width: auto;
@@ -914,7 +1132,7 @@ section.faq-section .faq_box .faq_item .faq_hd::before {
   top: 0;
   margin: auto;
   z-index: 1;
-  font-size: 1.875rem;
+  font-size: 2.375rem;
   width: 1.875rem;
   height: 1.875rem;
   color: var(--primary-clr);
@@ -953,6 +1171,7 @@ section.instagram-follow .instagram-item {
 }
 section.instagram-follow .instagram-item a {
   display: block;
+  overflow: hidden;
 }
 section.instagram-follow .instagram-item a img {
   width: 100%;

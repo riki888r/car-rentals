@@ -828,7 +828,84 @@
         </div>
     </div>
 </section>
+<section class="contact">
+    <img src="img/background.png" alt="" class="bg-img">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-5 col-md-5">
+                <h2>How Can We Help You?</h2>
+                <p>Book Us For All Of Your Luxury Transportation Needs
+                </p>
 
+                <ul>
+                    <li>
+                        <figure><img src="img/phone.svg" alt=""></figure>
+                        <div class="text-box">
+                            <h5>Phone</h5>
+                            <h6><span><a href="#">+971 50 903 8904</a></span> - <span><a href="#">+971 56 538
+                                        8444</a></span>
+                                Landline:<span><a href="#">+97 1 4546 6616</a></span></h6>
+                        </div>
+                    </li>
+                    <li>
+                        <figure><img src="img/email.svg" alt=""></figure>
+                        <div class="text-box">
+                            <h5>Email</h5>
+                            <h6>
+                                <a href="#">info@ukrentaldeals.com</a>
+                            </h6>
+                        </div>
+                    </li>
+                    <li>
+                        <figure><img src="img/location.svg" alt=""></figure>
+                        <div class="text-box">
+                            <h5>Address</h5>
+                            <h6>
+                                Church St WindermereState CodeLA23 3DG, UK
+                            </h6>
+                        </div>
+                    </li>
+                </ul>
+                <img src="img/logo.svg" class="logo-img" alt="">
+
+
+            </div>
+            <div class="col-lg-5 col-md-5">
+
+                <form>
+                    <div class="box">
+                        <input type="text" placeholder="Full Name*">
+                        <img src="img/icon.svg" alt="">
+                    </div>
+                    <div class="box">
+                        <input type="email" name="" placeholder="Your Email*">
+                        <img src="img/icon-2.svg" alt="">
+                    </div>
+                    <div class="box">
+                        <input type="number" name="" placeholder="Phone*">
+                        <img src="img/call-ico.svg" alt="">
+                    </div>
+                    <div class="box">
+                        <select name="">
+                            <option>Brands*</option>
+                        </select>
+                        <img src="img/arow.svg" alt="" class="option">
+                        <img src="img/car-ico.svg" alt="" class="car">
+                    </div>
+                    <div class="box">
+                        <textarea name="" id="" cols="0" rows="0" placeholder="Message"></textarea>
+                        <img src="img/sms-ico.svg" alt="" class="truck  ">
+                    </div>
+
+                    <input type="submit" value="Book Now">
+
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+</section>
 
 <section class="faq-section">
     <div class="container">
@@ -959,6 +1036,4 @@
         </div>
     </div>
 </section>
-
-
 <?php include 'inc/footer.php'; ?>
