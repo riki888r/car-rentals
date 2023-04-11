@@ -97,6 +97,7 @@
 
 <script src="js/bootstrap.min.js"></script>
 <script src="js/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 <script src="js/jquery.slimNav_sk78.min.js"></script>
 <script src="js/owl.carousel.js"></script>
 <script src="js/script.js"></script>
